@@ -1,0 +1,246 @@
+.navbar {
+    background-color:#e9cc56;
+    bottom:10px !important;
+    left:50% !important;
+    transform: translate(-50%);
+    width:300px;
+    border-radius:20px;
+}
+.icon {
+    cursor:pointer;
+    color:#56595e;
+    margin:0px 10px;
+}
+.icon:hover {
+    color:black;
+}
+.navIconTitle {
+    font-size:10px;
+    font-weight:bold;
+    line-height:15px;
+    margin-bottom:5px;
+}
+.container-fluid {
+    background-image:url('../public/asset/didi.webp');
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+}
+.paddingTop30{
+    padding-top:30px;
+}
+.container-home {
+    background-image:url('../public/asset/bg.jpg');
+    background-position: center;
+    background-size:cover;
+    padding:10px;
+    width:90%;
+    border-radius:20px 20px 0px 0px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:96.1vh
+}
+.header-1 {
+    font-family:serif;
+    font-size:3rem;
+}
+.header-2 {
+    font-family:'Great Vibes', cursive;
+    font-size:6rem;
+    color:#e9cc56;
+}
+.header-3 {
+    margin-top:30px;
+    font-size:1.5rem;
+    line-height:0px
+}
+.bungaUp {
+    position:absolute;
+    bottom:0;
+    left:-50px;
+    width:40%;
+}
+.bungaDown {
+    position:absolute;
+    top:0;
+    right:0px;
+    width:30%;
+}
+.bungaUpAcara {
+    position:absolute;
+    bottom:-1495px;
+    left:-50px;
+    width:40%;
+}
+.bungaDownAcara {
+    position:absolute;
+    top:1495px;
+    right:0px;
+    width:30%;
+}
+
+.container-mempelai {
+    background-color: rgba(0,0,0,0.8);
+    width:90%;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.container-acara {
+    background-image:url('../public/asset/bg.jpg');
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    width:90%;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.container-photo {
+    background-color: rgba(0,0,0);
+    width:90%;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.container-rsvp {
+    background-color: rgba(0,0,0,0.8);
+    width:90%;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.quotes{
+    padding:10px;
+    width:75%;
+    border-radius:10px;
+    color:#fff;
+}
+.frame{
+    width:50%;
+    border-radius:20px 2px 20px 2px;
+    overflow:hidden;
+}
+.header {
+    font-family:'Great Vibes', cursive;
+    font-size:5rem;
+    color:#e9cc56;
+    margin-bottom:0px;
+}
+.headerName {
+    font-family:'Great Vibes', cursive;
+    font-size:2rem;
+    margin-bottom:0px;
+    margin-top:10px;
+    line-height:26px;
+    text-align:left;
+}
+.goldColor {
+    color:#e9cc56;
+}
+.headerNameTwo {
+    font-family:'Great Vibes', cursive;
+    font-size:2rem;
+    margin-bottom:0px;
+    margin-top:10px;
+    line-height:26px;
+    color:#ddd;
+    text-align:right;
+}
+.textName {
+    color:#e9cc56;
+    line-height:13px;
+    font-size:0.7rem;
+    text-align:left;
+}
+.textNameTwo {
+    color:#e9cc56;
+    line-height:13px;
+    font-size:0.7rem;
+    text-align:right;
+}
+.card-countdown {
+    display:flex;
+    width:150px;
+    padding:2px 10px 0px 10px;
+    border-radius:10px;
+    background:rgba(200,100,30,0.5)
+}
+.text-countdown {
+    font-size:10px;
+    line-height:0px;
+}
+.card {
+    background:rgba(223,204,86,0.9) !important;
+}
+@media only screen and (max-width: 600px) {
+    .container-card {
+        background-color:rgba(0,0,0,0.5);
+        padding:10px;
+        width:90%;
+        border-radius:10px;
+    }
+    .quotes{
+        font-size:12px
+    }
+    .frame{
+        width:40%;
+    }
+    .header{
+        font-size:3rem
+    }
+    .bungaUpAcara {
+        position:absolute;
+        bottom:-1375px;
+        left:-50px;
+        width:40%;
+    }
+    .bungaDownAcara {
+        position:absolute;
+        top:1380px;
+        right:0px;
+        width:30%;
+    }
+    .header-1 {
+        font-family:serif;
+        font-size:2rem;
+    }
+    .header-2 {
+        font-family:'Great Vibes', cursive;
+        font-size:5rem;
+        color:#e9cc56;
+    }
+    .header-3 {
+        margin-top:30px;
+        font-size:1rem;
+        line-height:0px
+    }
+    .container-mempelai{
+        height:100vh
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2f3135;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #786b37;
+    border-radius:5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e9cc56;
+  }
