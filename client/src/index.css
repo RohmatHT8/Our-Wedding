@@ -6,4 +6,16 @@
   .flare {
     @apply bg-amber-700 w-64 h-64 rounded-full animate-ping-slow opacity-50 duration-1000 absolute;
   }
+  .card-event {
+   @apply w-72 h-72 sm:w-96 sm:h-96 bg-white mx-auto mt-10 rounded-3xl relative overflow-hidden flex justify-center items-center
+  }
+  .img-bg-card {
+   @apply absolute scale-150 bottom-12 sm:bottom-16 opacity-50
+  }
+  .text-header-card {
+   @apply font-semibold text-yellow-900 uppercase text-2xl font-inter mt-2
+  }
+  .button-card {
+   @apply mt-5 mb-5 bg-yellow-700 py-2 px-5 text-white font-semibold rounded-xl hover:bg-yellow-800;
+  }
 }

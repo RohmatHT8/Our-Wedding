@@ -6,7 +6,8 @@ export default function Mempelai() {
                     <div className="pt-10 pb-32 sm:pb-40 md:pb-52 px-3 text-center">
                         <img src="./love.png" className="w-20 mx-auto" />
                         <h1 className="font-tangarine text-4xl md:text-6xl font-semibold mb-5">We Found Love</h1>
-                        <p className="text-sm font-inter max-w-xl mx-auto md:text-lg">Tuhan menjadikan segala sesuatu indah pada waktu-Nya. Dia yang mempertemukan, Dia yang mengajarkan tentang kasih. Dia juga yang mempersatukan putra-putri kami dalam pernikahan kudus</p>
+                        <p className="text-sm font-inter max-w-xl mx-auto md:text-lg">"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."
+                            <br/>~ MATIUS 19 : 6 ~</p>
                     </div>
                 </div>
                 <div className="absolute bottom-0 w-full">
@@ -20,13 +21,13 @@ export default function Mempelai() {
                 <div className="container mx-auto relative  flex justify-center">
                     <div className="pt-10 px-3 text-center pb-32 sm:pb-40 md:pb-52">
                         <h1 className="font-tangarine text-5xl md:text-7xl font-bold relative z-10">Kedua Mempelai</h1>
-                        <div className="w-full mb-1 p-10 relative md:flex">
+                        <div className="w-full mb-1 py-10 relative md:flex">
                             <div>
                                 <div className="w-64 h-80 rounded-tl-2xl rounded-br-2xl mb-5 overflow-hidden bg-cover bg-center mx-auto relative shadow-lg" style={{ "backgroundImage": "url(https://ik.imagekit.io/kthsx9hzg/25_fkHZFJfXU.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666142230403)" }}>
                                 </div>
                                 <h1 className="font-mea-culpa text-3xl md:text-4xl">Randkhi Da Kyska Tamara</h1>
                                 <p className="text-sm">Putra ke dua</p>
-                                <p className="font-bold font-serif text-slate-500 text-sm md:text-base">Bpk. Capt Henkie Tamara <br /> Ibu. Sanny Tamara</p>
+                                <p className="font-bold font-serif text-slate-500 text-sm md:text-base">Bpk. Capt. Henkie Tamara <br /> Ibu. Sanny Tamara</p>
                             </div>
 
                             <div className="text-3xl md:text-5xl font-mea-culpa  my-4 md:items-center md:flex">&</div>

@@ -2,11 +2,11 @@ export default function Headers() {
     return (
         <section className="overflow-x-hidden ">
             <div className="container relative">
-                <div className='h-screen object-cover sm:w-screen object-top bg-no-repeat relative bg-cover bg-bottom flex justify-center md:items-center' style={{ "backgroundImage": "url('./coba.jpg')" }}>
+                <div className='h-screen object-cover sm:w-screen object-top bg-no-repeat relative bg-fixed bg-bottom flex justify-center items-center -z-50' style={{ "backgroundImage": "url('https://ik.imagekit.io/kthsx9hzg/render/coba_IFJ5_t-0d.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666225486421')" }}>
 
-                    <div className="absolute w-full h-1/4 bg-black opacity-30  blur-lg top-0 rounded-b-full"></div>
+                    {/* <div className="absolute w-full h-1/4 bg-black opacity-30  blur-lg top-0 rounded-b-full"></div> */}
 
-                    <div className="text-center py-10 relative z-10">
+                    <div className="text-center py-10 fixed -z-40">
                         <p className="text-xl text-white md:text-3xl">THE WEDDING OF</p>
                         <h1 className="font-mea-culpa text-6xl text-yellow-200 mt-2 md:text-8xl">Randkhi & Permata</h1>
                         <p className="font-serif font-semibold text-white md:text-lg">03 | 12 | 2022</p>
