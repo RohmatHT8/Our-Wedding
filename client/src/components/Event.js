@@ -4,10 +4,10 @@ import { VscMailRead } from 'react-icons/vsc'
 export default function Event() {
     return (
         <>
-            <section className="event bg-dark relative">
+            <section id="event" className="bg-dark relative">
                 <div className="container py-10 text-center mx-auto">
                     <h1 className="font-tangarine text-5xl md:text-7xl font-bold relative z-10 text-slate-100 mb-5">Counting Days</h1>
-                    <img src="https://ik.imagekit.io/kthsx9hzg/render/IMG_8484_em4Rbl8cX.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666165670516" className="w-1/2 rounded-lg mx-auto md:w-1/4" />
+                    <img src="https://ik.imagekit.io/kthsx9hzg/render/IMG_8484_em4Rbl8cX.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666165670516" className="w-1/2 rounded-lg mx-auto md:w-1/4" alt='image'/>
                     <p className="mt-5 text-sm text-slate-50 max-w-md mx-auto">"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia." <br /><span className="uppercase">~ Matius 19 : 6 ~</span></p>
                     {/* Countdown */}
                     <div className="mt-5 flex justify-evenly max-w-sm mx-auto md:mt-10">
@@ -32,7 +32,7 @@ export default function Event() {
                     {/* card Event  */}
                     <div className='flex flex-wrap justify-center gap-2'>
                         <div className="card-event">
-                            <img src="../foral.jpg" className="img-bg-card" />
+                            <img src="../foral.jpg" className="img-bg-card" alt='foral'/>
                             <div className='relative z-10'>
                                 <GiBigDiamondRing className='mx-auto text-6xl text-yellow-800' />
                                 <p className='text-header-card'>Pemberkatan</p>
@@ -42,9 +42,9 @@ export default function Event() {
                         </div>
 
                         <div className="card-event">
-                            <img src="../foral.jpg" className="img-bg-card" />
+                            <img src="../foral.jpg" className="img-bg-card" alt='foral'/>
                             <div className='relative z-10'>
-                                <img src='../resepsi.png' className='w-1/5 mx-auto' />
+                                <img src='../resepsi.png' className='w-1/5 mx-auto' alt='resepsi'/>
                                 <p className='text-header-card'>Resepsi</p>
                                 <p className='mt-2 text-xl font-semibold'>Sabtu, 03 Desember 2022 <br /> 12.00 s/d 02.00 wib <br /> Hotel Balcony Sukabumi</p>
                                 <a href='https://www.google.com/maps/place/Hotel+Balcony/@-6.9084752,106.9339156,17z/data=!3m1!4b1!4m8!3m7!1s0x2e6849b58cbe0be3:0x399a386e1916002a!5m2!4m1!1i2!8m2!3d-6.9084726!4d106.9360761' target={"_blank"}><button className='button-card transition duration-500'><FaMapMarkedAlt className='inline text-slate-50 text-xl mb-1 mr-2' />Google Maps</button></a>
@@ -55,7 +55,7 @@ export default function Event() {
                     {/* card RSVS */}
 
                     <div className='w-72 sm:w-96 lg:w-4/5 bg-white px-10 py-5 mt-10 mb-10 sm:mb-20 md:mb-32 lg:mb-44 mx-auto rounded-2xl relative overflow-hidden'>
-                        <img src="../foralkiriatas.jpg" className='absolute top-0 left-0 opacity-50' />
+                        <img src="../foralkiriatas.jpg" className='absolute top-0 left-0 opacity-50' alt='resepsi'/>
                         <div className='relative z-10'>
                             <p className=' text-yellow-700 font-tangarine text-5xl font-bold mb-2'>RSVP</p>
                             <form>

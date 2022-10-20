@@ -4,7 +4,7 @@ export default function Mempelai() {
             <section id="mempelai" className=" bg-yellow-200 relative">
                 <div className="container mx-auto">
                     <div className="pt-10 pb-32 sm:pb-40 md:pb-52 px-3 text-center">
-                        <img src="./love.png" className="w-20 mx-auto" />
+                        <img src="./love.png" className="w-20 mx-auto" alt="love"/>
                         <h1 className="font-tangarine text-4xl md:text-6xl font-semibold mb-5">We Found Love</h1>
                         <p className="text-sm font-inter max-w-xl mx-auto md:text-lg">"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."
                             <br/>~ MATIUS 19 : 6 ~</p>
