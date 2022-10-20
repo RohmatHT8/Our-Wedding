@@ -11,7 +11,11 @@ module.exports = {
       fontFamily:{
         inter:['Inter'],
         tangarine:['Tangerine'],
-        poppins:['Poppins']
+        poppins:['Poppins'],
+        "mea-culpa":['Mea Culpa']
+      },
+      colors: {
+        dark:"#273036"
       }
     },
   },
