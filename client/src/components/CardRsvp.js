@@ -22,7 +22,7 @@ export default function CardRsvp() {
             <img src="../foralkiriatas.jpg" className='absolute top-0 left-0 opacity-50' alt='resepsi' />
             <div className='relative z-10'>
                 <p className=' text-yellow-700 font-tangarine text-5xl font-bold mb-2'>RSVP</p>
-                <form onSubmit={handleInput}>
+                <form onSubmit={handleInput} method="post">
                     <label>
                         <p className='text-left font-semibold font-inter text-sm text-slate-700 mb-1'>Nama Tamu</p>
                         <input type={"text"} className="w-full border border-yellow-700 rounded-lg p-2" placeholder='Nama Tamu' required name='nama'   onChange={changeInput} value={formInput.nama}/>

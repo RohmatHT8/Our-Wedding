@@ -3,9 +3,9 @@ export default function Headers() {
         <>
             <section id="home" className="relative overflow-hidden">
                 <div className="container relative">
-                    <div className='h-screen object-cover sm:w-screen object-top bg-no-repeat relative bg-fixed bg-bottom flex justify-center items-center -z-30 ' style={{ "backgroundImage": "url('https://ik.imagekit.io/kthsx9hzg/render/coba_IFJ5_t-0d.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666225486421')" }}>
+                    <div className='h-screen object-cover sm:w-screen object-top bg-no-repeat relative bg-fixed bg-center flex justify-center items-center -z-30 ' style={{ "backgroundImage": "url('https://ik.imagekit.io/kthsx9hzg/render/IMG_8442_3eHAapnlQ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666165664927')"}}>
                         <div className="text-center py-10 fixed -z-40">
-                            <p className="text-xl text-white md:text-3xl">THE WEDDING OF</p>
+                            <p className="text-lg md:text-2xl text-white">THE WEDDING OF</p>
                             <h1 className="font-mea-culpa text-6xl text-yellow-200 mt-2 md:text-8xl">Randkhi & Permata</h1>
                             <p className="font-serif font-semibold text-white md:text-lg">03 | 12 | 2022</p>
                         </div>
