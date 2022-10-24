@@ -1,8 +1,25 @@
 import { GiBigDiamondRing } from 'react-icons/gi'
 import { FaMapMarkedAlt } from 'react-icons/fa'
-import { VscMailRead } from 'react-icons/vsc'
-export default function Event() {
-    return (
+import { useState, useEffect } from 'react'
+import {getRemainingTimeUntilMsTimestamp} from './utils/CountdownTimerUtils';
+import CardRsvp from './CardRsvp';
+export default function Event({countDownTimestampMs}) {
+    const [remainingTimes, setRemainingtime] = useState({
+        days:'00',
+        hours:'00',
+        minutes:'00',
+        seconds:'00'
+    })
+    useEffect(() => {
+        const intervalid = setInterval(() => {
+            updatedRemaining(countDownTimestampMs)
+        }, 1000)
+        return () => clearTimeout(intervalid)
+    }, [countDownTimestampMs]) 
+    function updatedRemaining (countdown) {
+        setRemainingtime(getRemainingTimeUntilMsTimestamp(countdown))
+    }
+    return ( 
         <>
             <section id="event" className="bg-dark relative">
                 <div className="container py-10 text-center mx-auto">
@@ -12,19 +29,19 @@ export default function Event() {
                     {/* Countdown */}
                     <div className="mt-5 flex justify-evenly max-w-sm mx-auto md:mt-10">
                         <div>
-                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">0</p>
+                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">{remainingTimes.days}</p>
                             <p className="text-slate-200 font-popper">Hari</p>
                         </div>
                         <div>
-                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">0</p>
+                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">{remainingTimes.hours}</p>
                             <p className="text-slate-200 font-popper">Jam</p>
                         </div>
                         <div>
-                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">0</p>
+                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">{remainingTimes.minutes}</p>
                             <p className="text-slate-200 font-popper">Menit</p>
                         </div>
                         <div>
-                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">0</p>
+                            <p className="py-1 px-3 bg-slate-200 inline-block rounded-sm">{remainingTimes.seconds}</p>
                             <p className="text-slate-200 font-popper">Detik</p>
                         </div>
                     </div>
@@ -53,32 +70,8 @@ export default function Event() {
                     </div>
 
                     {/* card RSVS */}
-
-                    <div className='w-72 sm:w-96 lg:w-4/5 bg-white px-10 py-5 mt-10 mb-10 sm:mb-20 md:mb-32 lg:mb-44 mx-auto rounded-2xl relative overflow-hidden'>
-                        <img src="../foralkiriatas.jpg" className='absolute top-0 left-0 opacity-50' alt='resepsi'/>
-                        <div className='relative z-10'>
-                            <p className=' text-yellow-700 font-tangarine text-5xl font-bold mb-2'>RSVP</p>
-                            <form>
-                                <label>
-                                    <p className='text-left font-semibold font-inter text-sm text-slate-700 mb-1'>Nama Tamu</p>
-                                    <input type={"text"} className="w-full border border-yellow-700 rounded-lg p-2" placeholder='Nama Tamu' />
-                                </label>
-                                <label>
-                                    <p className='text-left font-semibold font-inter text-sm text-slate-700 mb-1 mt-3'>Konfirmasi Kehadiran</p>
-                                    <select className='border border-yellow-700 rounded-lg p-2 w-full'>
-                                        <option>Ya, saya akan hadir</option>
-                                        <option>Masih ragu-ragu</option>
-                                        <option>Maaf, saya tidak bisa hadir</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <p className='text-left font-semibold font-inter text-sm text-slate-700 mb-1 mt-3'>Jumlah Kehadiran</p>
-                                    <input type={"number"} className="w-full border border-yellow-700 rounded-lg p-2" placeholder='Masukan Jumlah' />
-                                </label>
-                                <button className='button-card transition duration-500 mb-4'><VscMailRead className='inline mb-1 mr-2 text-xl' />Submit RSVP</button>
-                            </form>
-                        </div>
-                    </div>
+                    <CardRsvp />
+                    
 
                 </div>
 
