@@ -1,19 +1,28 @@
 import { MdFileCopy } from 'react-icons/md'
+import { BsCheckCircleFill } from 'react-icons/bs'
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from 'react';
 export default function Gift() {
+    const [copied, setCopied] = useState(false)
     return (
         <section className="bg-dark relative pb-40 md:pb-72">
             <div className="container py-10 text-center px-5 mx-auto">
-                <img src="../gift.png" className="w-40 mx-auto" alt='gift'/>
+                <img src="../gift.png" className="w-40 mx-auto" alt='gift' />
                 <h1 className="font-tangarine text-5xl md:text-7xl font-bold relative z-10 text-slate-100 mb-5 mt-3">Wedding Gift</h1>
-                <p className="max-w-xl text-slate-100 font-inter mx-auto">Doa restu Bapak Ibu Saudara/i merupakan yang sangat berarti bagi kami. Berikut Bapak Ibu Saudara/i dapat memberikan kado secara cashless sebagai ungkapan tanda kasih</p>
+                <p className="max-w-xl text-slate-100 font-inter mx-auto">Doa restu Bapak Ibu Saudara/i merupakan dukungan yang sangat berarti bagi kami. Apabila Bapak Ibu Saudara/i berkenan, Bapak/Ibu Saudara/i dapat memberikan kado secara cashless sebagai ungkapan tanda kasih</p>
 
                 <div className="w-72 sm:w-96 bg-slate-100 py-10 mx-auto mt-5 rounded-2xl relative overflow-hidden">
-                    <img src="../foralkiriatas.jpg" className="absolute scale-150 top-3 left-3 sm:top-3 opacity-50" alt='foral'/>
+                    <img src="../foralkiriatas.jpg" className="absolute scale-150 top-3 left-3 sm:top-3 opacity-50" alt='foral' />
                     <div className="relative z-10">
                         <p className="text-xl font-bold text-slate-700"><span className="text-blue-700 font-serif text-4xl">Bank BCA</span> <br />Permata Hati Sukaryanath<br />1810395261</p>
-                        <button className="bg-blue-700 mt-2 hover:bg-blue-800 text-slate-100 font-semibold py-2 px-3 rounded-md"><MdFileCopy className='inline mb-1 mr-1' />Salin</button>
+                        <CopyToClipboard text={"1810395261"} onCopy={() => {
+                            setCopied(true)
+                        }}>
+                            <button className="bg-blue-700 mt-2 hover:bg-blue-800 text-slate-100 font-semibold py-2 px-3 rounded-md"><MdFileCopy className='inline mb-1 mr-1' />Salin</button>
+                        </CopyToClipboard>
+                        {copied ? <span className="text-green-700 font-semibold ml-1">Copied <BsCheckCircleFill className="inline mb-1" /></span> : null}
                         <p>Or <br /><span className='font-bold text-slate-700'>Scan QR Code</span></p>
-                        <img src='../qrcode.png' alt='qrcode' className='w-1/2 mx-auto'/>
+                        <img src='../qrcode.png' alt='qrcode' className='w-1/2 mx-auto' />
                     </div>
                 </div>
             </div>
