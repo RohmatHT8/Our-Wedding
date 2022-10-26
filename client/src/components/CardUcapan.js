@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Swal from 'sweetalert2'
-export default function CardUcapan({ wishes }) {
+export default function CardUcapan() {
     const [formInput, setFormInput] = useState({
         name: '',
         ucapan: ''
@@ -14,6 +14,7 @@ export default function CardUcapan({ wishes }) {
         })
     }
     const handleInput = (e) => {
+        e.preventDefault()
         fetch('http://localhost:3001/wishes', {
             method: "post",
             headers: {
@@ -28,7 +29,6 @@ export default function CardUcapan({ wishes }) {
                     data.name + " atas doa terbaik untuk kami",
                     'success'
                 )
-                wishes.push(data)
                 setFormInput({
                     name: '',
                     ucapan: ''

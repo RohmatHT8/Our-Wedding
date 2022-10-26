@@ -4,6 +4,12 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useState } from 'react';
 export default function Gift() {
     const [copied, setCopied] = useState(false)
+    const changeCopied = () => {
+        if(window.scrollY !== 6568){
+            setCopied(false)
+        }
+    }
+    window.addEventListener('scroll', changeCopied)
     return (
         <section className="bg-dark relative pb-40 md:pb-72">
             <div className="container py-10 text-center px-5 mx-auto">
