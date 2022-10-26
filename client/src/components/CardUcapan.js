@@ -15,7 +15,7 @@ export default function CardUcapan() {
     }
     const handleInput = (e) => {
         e.preventDefault()
-        fetch('http://localhost:3001/wishes', {
+        fetch('https://undangan-rangkie.herokuapp.com/wishes', {
             method: "post",
             headers: {
                 'Content-Type': 'application/json',

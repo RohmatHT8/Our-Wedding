@@ -16,7 +16,7 @@ export default function CardRsvp() {
     }
     const handleInput = (e) => {
         e.preventDefault()
-        fetch('http://localhost:3001/invitation', {
+        fetch('https://undangan-rangkie.herokuapp.com/invitation', {
             method: "post",
             headers: {
                 'Content-Type': 'application/json',

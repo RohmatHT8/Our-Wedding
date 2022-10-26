@@ -5,7 +5,7 @@ import Loading from './utils/Loading'
 export default function Ucapan() {
     const [wishes, setWishes] = useState([])
     useEffect(() => {
-        fetch('http://localhost:3001/wishes')
+        fetch('https://undangan-rangkie.herokuapp.com/wishes')
             .then(response => response.json())
             .then(data => setWishes(data))
     }, [])
