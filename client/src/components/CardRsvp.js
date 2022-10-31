@@ -16,6 +16,7 @@ export default function CardRsvp() {
     }
     const handleInput = (e) => {
         e.preventDefault()
+        console.log(formInput)
         fetch('https://undangan-rangkie.herokuapp.com/invitation', {
             method: "post",
             headers: {

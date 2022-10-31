@@ -9,12 +9,11 @@ export default function Dashboard() {
         tidakHadir:0
     })
     useEffect(() => {
-        fetch('http://localhost:3001/invitation')
+        fetch('https://undangan-rangkie.herokuapp.com/invitation')
             .then(response => {
                 return response.json()
             })
             .then(data => {
-                console.log(data)
                 setCount({
                     hadir:data.count,
                     ragu:data.ragu,

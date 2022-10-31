@@ -2,7 +2,6 @@ const { Invitation } = require('../models')
 class Controller {
     static async createInvitation(req, res, next) {
         try {
-            console.log(req.body)
             const { nama, konfirmasi, jumlah } = req.body
             const invitation = await Invitation.create({name:nama, konfirmasi, jumlah})
             res.status(201).json(invitation)

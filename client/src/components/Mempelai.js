@@ -11,10 +11,10 @@ export default function Mempelai() {
                     </div>
                 </div>
                 <div className="absolute bottom-0 w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fef9c3" fill-opacity="1" d="M0,288L120,256C240,224,480,160,720,160C960,160,1200,224,1320,256L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fef9c3" fillOpacity="1" d="M0,288L120,256C240,224,480,160,720,160C960,160,1200,224,1320,256L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
                 </div>
                 <div className="absolute bottom-0 w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fef9c3" fill-opacity="0.3" d="M0,128L80,112C160,96,320,64,480,69.3C640,75,800,117,960,144C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fef9c3" fillOpacity="0.3" d="M0,128L80,112C160,96,320,64,480,69.3C640,75,800,117,960,144C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
                 </div>
             </section>
             <section className="bg-yellow-100 relative">

@@ -14,3 +14,6 @@
   background:#eab308;
   border-radius: 10px;
 }
+.bg-header {
+  background-image:url('../public/header.jpg');
+}

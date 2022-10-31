@@ -1,5 +1,5 @@
 import { BiTimeFive } from 'react-icons/bi'
-export default function CardMessage({el}) {
+export default function CardMessage({el, setWishes}) {
     return (
         <div>
             <div className="px-10 py-5 relative z-10 text-left">
