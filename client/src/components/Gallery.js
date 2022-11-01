@@ -22,10 +22,6 @@ export default function Gallery() {
                 <img src="./img/14.jpg" className="row-span-2" alt="galerry item" />
                 <img src="./img/15.jpg" className="row-span-2" alt="galerry item" />
                 <img src="./img/16.jpg" className="row-span-2" alt="galerry item" />
-                <video width="320" height="240" controls>
-                    <source src="../video/video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
             </div>
             <div className="absolute bottom-0 w-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fillOpacity="1" d="M0,160L80,186.7C160,213,320,267,480,261.3C640,256,800,192,960,165.3C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>

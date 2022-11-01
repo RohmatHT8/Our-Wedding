@@ -3,7 +3,7 @@ export default function Headers() {
         <>
             <section id="home" className="relative overflow-hidden">
                 <div className="container relative">
-                    <div className='h-screen object-cover sm:w-screen object-top bg-no-repeat relative bg-bottom flex justify-center items-center -z-10 bg-header' >
+                    <div className='h-screen sm:w-screen bg-no-repeat relative bg-bottom bg-cover flex justify-center md:items-center -z-10 bg-header' >
                         <div className="text-center py-10 -z-40">
                             <p className="text-lg md:text-2xl text-white">THE WEDDING OF</p>
                             <h1 className="font-mea-culpa text-6xl text-yellow-200 mt-2 md:text-8xl">Randkhi & Permata</h1>

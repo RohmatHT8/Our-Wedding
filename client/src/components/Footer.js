@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="absolute bottom-0 w-full blur-lg opacity-60 scale-150">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fillOpacity="1" d="M0,128L80,106.7C160,85,320,43,480,32C640,21,800,43,960,74.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div>
-            <div className="h-screen bg-cover bg-fixed bg-center relative -z-10" style={{ "backgroundImage": "url(https://ik.imagekit.io/kthsx9hzg/8_GKsf7JRKF.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666142218180)" }}>
+            <div className="h-screen bg-cover bg-center relative -z-10 bg-footer">
             </div>
             <div className="absolute bottom-24 z-10 right-1/4">
                 <p className="text-white font-serif text-center">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kami.<br />kami yang berbahagia</p>

@@ -63,7 +63,7 @@ export default function Event({countDownTimestampMs}) {
                             <div className='relative z-10'>
                                 <img src='../resepsi.png' className='w-1/5 mx-auto' alt='resepsi'/>
                                 <p className='text-header-card'>Resepsi</p>
-                                <p className='mt-2 text-xl font-semibold'>Sabtu, 03 Desember 2022 <br /> 12.00 s/d 02.00 wib <br /> Hotel Balcony Sukabumi</p>
+                                <p className='mt-2 text-xl font-semibold'>Sabtu, 03 Desember 2022 <br /> 12.00 s/d 14.00 wib <br /> Hotel Balcony Sukabumi</p>
                                 <a href='https://www.google.com/maps/place/Hotel+Balcony/@-6.9084752,106.9339156,17z/data=!3m1!4b1!4m8!3m7!1s0x2e6849b58cbe0be3:0x399a386e1916002a!5m2!4m1!1i2!8m2!3d-6.9084726!4d106.9360761' target={"_blank"}><button className='button-card transition duration-500'><FaMapMarkedAlt className='inline text-slate-50 text-xl mb-1 mr-2' />Google Maps</button></a>
                             </div>
                         </div>
